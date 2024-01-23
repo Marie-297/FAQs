@@ -1,0 +1,100 @@
+html {
+  background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+body {
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+
+.second-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 370px;
+  background-color: white;
+  border-radius: 20px;
+}
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.headflex {
+  display: flex;
+  align-items: center;
+}
+.flexxdiv {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flexxxdiv {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+h1 {
+  font-weight: 700;
+}
+h6 {
+  font-weight: 600;
+  font-size: 12px;
+}
+.flexdiv {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+img {
+  height: 20px;
+  width: 20px;
+}
+p {
+  color: gray;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 780px) and (min-width: 401px) {
+  h6 {
+    font-size: 14px;
+  }
+  .second-body {
+    width: 90%;
+    height: 70%;
+  }
+  .flexxdiv, .flexdiv {
+    column-gap: 20%;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  h6 {
+    font-size: 14px;
+  }
+  .second-body {
+    width: 90%;
+    height: 60%;
+  }
+  .flexxdiv, .flexdiv {
+    column-gap: 20%;
+  }
+  
+}
