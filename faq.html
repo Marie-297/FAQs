@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="faq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>FAQ's</title>
 </head>
 <body>
@@ -17,31 +19,32 @@
         </div>
         <div class="flexxxdiv">
           <div class="flexxdiv">
-            <h6>What is Frontend Mentor, and how will it help me?</h6>
-            <img src="assets/images/icon-minus.svg" alt="">
+            <h4>What is Frontend Mentor, and how will it help me?</h4>
+            <div class="imgs">
+              <button type="button" title="btn" class="plus" onclick="plusClick();"><img src="assets/images/icon-plus.svg" alt="" class="imgplus"></button>
+              <button type="button" title="btn" class="hidden minus" onclick="minusClick();"><img src="assets/images/icon-minus.svg" alt="" class="imgminus"></button>
             </div>
-            <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScrips. It's suitable for all levels and ideal for portfolio building.</p>
+          </div>
+            <p class="detailspara hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS,and JavaScrips. It's suitable for all levels and ideal for portfolio building.</p>
         </div>
 
         <div class="flexdiv">
-          <h6>Is Frontend Mentor free?</h6>
+          <h4>Is Frontend Mentor free?</h4>
           <img src="assets/images/icon-plus.svg" alt="">
         </div>
         <div class="flexdiv">
-          <h6>Can I use Frontend Mentor projects in my portfolio?</h6>
+          <h4>Can I use Frontend Mentor projects in my portfolio?</h4>
           <img src="assets/images/icon-plus.svg" alt="">
         </div>
         
         <div class="flexdiv">
-          <h6>How can I get help if I'm stuck on a challenge</h6>
+          <h4>How can I get help if I'm stuck on a challenge</h4>
           <img src="assets/images/icon-plus.svg" alt="">
         </div>
         
       </div>
     </div>
-
   </div>
-
-  <script src="/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="faq.js"></script>
 </body>
 </html>
